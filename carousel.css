@@ -33,7 +33,6 @@
 	width:100%;
 }
 
-
 #myCarousel .carousel-control
 {
 	width:10%;
@@ -71,7 +70,10 @@
 #myCarousel img {
 	margin-top: 5%;
     position : relative;
-    width    : 100%;
+    width    : auto;
+    height: auto;;
+    max-height: 160px;
+    max-width: 100%;
     top      : 0px;
 }
 
