@@ -1,0 +1,97 @@
+
+#myCarousel
+{
+	height:100%
+}
+
+#myCarousel .carousel-inner
+{
+	width: 80%;
+	height: 93%;
+	left:10%;
+}
+
+.carousel-control.left
+{
+	background-image: none;
+}
+.carousel-control.right
+
+{
+	background-image: none;
+}
+
+.container
+{
+	width:100%;
+	
+}
+
+.imageCentreContainer
+{
+	text-align:center; 
+	width:100%;
+}
+
+
+#myCarousel .carousel-control
+{
+	width:10%;
+}
+
+#myCarousel .item
+{
+	height:100%;
+}
+
+#myCarousel .container
+{
+	height:100%;
+}
+
+#myCarousel .carouselText
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	float:right;
+	width:55%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 94%;
+}
+
+#myCarousel .carouselImage
+{
+	float: left;
+	width:40%;
+	height: 100%;
+	overflow: auto;
+}
+
+#myCarousel img {
+	margin-top: 5%;
+    position : relative;
+    width    : 100%;
+    top      : 0px;
+}
+
+.carouselImage .btn
+{
+	margin-top: 5%;
+}
+
+.glyphicon-chevron-left
+{
+	margin-top:-0.5em;
+	color: #FF9500;
+	font-size:2em;
+}
+
+.glyphicon-chevron-right
+{
+	margin-top:-0.5em;
+	color: #FF9500;
+	font-size: 2em;
+}
+
+

@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thomas Kiley - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+
+    <link rel="icon" 
+      type="image/png" 
+      href="/images/icon.png" />
+
+    <script type="text/javascript" src="dist/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Register the arrow keys so can scroll through portfolio -->
+    <script type="text/javascript">
+    $(document).keydown(function(e){
+        if (e.keyCode == 37) { 
+          $('.carousel').carousel('prev')  
+          return false;
+        }
+        else if(e.keyCode == 39)
+        {
+          $('.carousel').carousel('next')
+        }
+    });
+    </script>
+
+  </head>
+  <body>
+    <div id="centralColumn">
+  <div id="main">
+
+    
+    <div class="navbar navbar-default" role="navigation" id="navbar">
+        <div class="normalNavBar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Portfolio</a></li>
+            <li><a href="cv.pdf">CV (PDF)</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <!---<ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>-->
+        </div><!--/.nav-collapse -->
+        <div style="float:right">
+
+      </div>
+      </div>
+    <div id="pageBody">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        
+        <div class="carousel-inner">
+          <div class="item active">
+            <!--<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
+            <div class="container" id="ssz">
+              <div class="carouselText">
+              
+                <p>I was involved in the development of Strike Suit Zero - a game in which you control a transforming space ship, programming in C++. I had a wide variety of responsibilities including rerwritting the save system, being responsible for the audio code (FMOD) and designing and developing the DLC ships. </p>
+
+                <p>I worked in the run up to release, helping to fix bugs across the code base and within Lua scripts. Post launch, I worked on porting the game over to Mac and Linux, including setting up the build process on CC.NET.</p>
+
+                <p>The save system did not support multiple save files. This was not suitable as it meant settings such as your resolution were saved in to the Steam Cloud. Then, if you loaded up the game on a different computer, it would attempt to use your resolution from your old computer, which may not be compatible. I refactored the system to allow us to define different save files which one could then specify if they would be saved in the cloud, among other things.</p>
+
+                <p>I was responsible for maintaining and extending the audio code. This included implemented a scriptable low pass filter and other features requested by our audio technician. </p>
+
+                <p>I created two further Strike Suits - the <a class="darkLink" href="http://store.steampowered.com/app/234180/" target="_blank">Raptor</a> and the Marauder (avaliable to KickStarter backers and in <a class="darkLink" href="http://store.steampowered.com/app/234160/" target="_blank">Strike Suit Infinity</a>). The Raptor is a agile ship with a close range shotgun capable of hitting multiple targets at once. The Marauder, is a heavier ship with a long range cannon and is the only other ship, aside from the bomber, capable of firing torpedos. I was responsible for the new code required for these ships as well as trying them in differenent scenarios to ensure they were fun and effective. </p>
+              
+              </div>
+              <div class="carouselImage">
+                <h1>Strike Suit Zero</h1>
+                <h3>2013</h3>
+                
+                <div class="imageCentreContainer">
+                  <img src="images/ssz.jpg"/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://store.steampowered.com/app/209540" role="button">Buy on Steam</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+          	<div class="container" id="ssz">
+              <div class="carouselText">
+              
+                <p>To encourage the community to use the modding tools we made for Strike Suit Zero, we did a 1 week jam in the studio to develop mods for SSZ.</p>
+
+                <p>We developed a tough as nails racing game based on a physics model we developed. </p>
+
+                <p>This jam was uniquely difficult as we were the first people to really use the mod tool and it continued to be developed through out the week as bugs were found and fixed.</p>
+
+                <p>I was responsible for the physics model that controlled the ship. As it was a mod, we were required to make the modifications in Lua (as opposed to C++) and if we ever needed new functionality from the engine, we had to implement it in as general a way as possible so it would be of use to other modders. </p>              
+              </div>
+              <div class="carouselImage">
+                <h1>S-Zero</h1>
+                <h3>2013</h3>
+                
+                <div class="imageCentreContainer">
+                  <img src="images/szero.jpg"/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=146527746" role="button">Download Mod</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="kai">
+              <div class="carouselText">
+
+                <p>My third year project for my degree is to create a tool to develop AI's for games. I was inspired by the structure of the AI code in Strike Suit Zero but wanted to create a tool that would allow designers to create and modify behaviours.</p>
+
+                <p>The tool itself is developed in C# using WinForms and SlimDX to render the behaviours. The behaviours themselves take the form of a network of nodes. The nodes are either code modules, simple behaviours imported via DLL that handle low level elements, and other behaviours created by the tool. In this way, complex behaviours can be composed out of simple ones. It also allows for complex elements, such as the physics behind the movement, to be developed by coders and provided as sealed behaviours for designers to use. </p>
+
+                <p>I have written the back end that simulates these behaviours, the tool to create them and I am currently developing a game in Unity3D to demonstrate the kind of behaviours that can be made.</p>
+
+                <p>I plan to allow the editor to be connected to a game and see, in real time, what the behaviours are doing. This will help to debug AI behaviours. I regard this as a key feature as one of the main issues I had when modifying the AI was, due to the real time nature of games, it was very difficult to identify what was causing bugs in the AI code. </p>
+
+              </div>
+              <div class="carouselImage">
+                <h1>kAI - Component Based AI System</h1>
+                <h3>2013</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/kaiLogo.png" style="width:93px;"/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://github.com/thk123/kAI/" role="button">Browse Source Code</a></p>
+              </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="pub">
+              <div class="carouselText">
+                <p>I was Project Manager for a team of 5 that entered a competition (<a class="darkLink" href="http://atositchallenge.net" target="_blank">the Atos IT Challenge</a>) to develop a mobile app. We created an Android application to organise trips to the pub. </p>
+
+                <p>The key features of the app were: </p>
+
+                <ul>
+                  <li>A 2 stage organisation structure where you find out if people are "up for it" before commiting to going.</li>
+                  <li>An algorithm that looks at your Facebook activity, geographic location and past pub trips to rank your friends based on likelyhood of inviting them.</li>
+                </ul>
+
+                <p>We developed both the app and the server to manage the events in Java. I was mainly involved in the asynchronous data transmission on the app and the background service which kept the app up to date with the latest events. </p>
+
+                <p>We came 4th overall internationally from an original 84 teams. Please note, the server is not running, so if you try to run the app, it won't function as intended.</p>              
+              </div>
+              <div class="carouselImage">
+                <h1>Pub?</h1>
+                <h3>2012</h2>
+                  <div class="imageCentreContainer">
+                    <img src="images/boose.png" style="width:98px;" />
+                    <p><a class="btn btn-lg btn-primary" target="_blank" href="http://github.com/Dimappers/Pub/" role="button">Browse Source Code</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="disasterMode">
+              <div class="carouselText">
+
+                <p>A <a class="darkLink" href="http://www.globalgamejam.org" target="_blank">Global Game Jam</a> game made from the the theme "We don't see things as they are, we see them as we are". </p>
+
+                <p>In And Then You Die, you are presented with a series of bizzare life events. For each one, you must choose which emotion you will use to respond to the event. At the end, your life story will be recounted and then you die. 
+
+                <p>We made the game in 48 hours using Unity.</p>
+
+              </div>
+              <div class="carouselImage">
+                <h1>And Then You Die</h1>
+                <h3>2014</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/atyd.png" width=100%/>
+                  <p>
+                    <a class="btn btn-lg btn-primary" target="_blank" href="http://globalgamejam.org/2014/games/and-then-you-die" role="button">Download Game</a>
+                    <a class="btn btn-lg btn-primary" target="_blank" href="http://www.honeytribestudios.com/games/AndThenYouDie/AndThenYouDie.html" role="button">Play Online</a>
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="disasterMode">
+              <div class="carouselText">
+
+                <p>A <a class="darkLink" href="http://www.globalgamejam.org" target="_blank">Global Game Jam</a> game inspired by a group member's experience of refugee camps. In the game you manage the aftermath of some unspecified disaster. Most of the game involves trying to rapidly organise people in to managable groups.</p>
+
+                <p>We had an audio designer who created a set of tracks that could be dynamically combined to create a growing sense of tension. We had to find a way, within the time limits, of implementing this. The solution was to just start them at the point where they woudl be in sync.</p>
+
+                <p>Most of the game hinged on the simulation aspect which meant me and the other coder had to work very closely to ensure we didn't tread on each other's toes.</p>
+
+                <p>We made the game in XNA in 48 hours. </p>
+
+              </div>
+              <div class="carouselImage">
+                <h1>Disaster Mode</h1>
+                <h3>2013</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/disaster.png" width=100%/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://2013.globalgamejam.org/2013/disaster-mode" role="button">Download Game</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="gloop">
+              <div class="carouselText">
+                <p>A <a class="darkLink" href="http://www.globalgamejam.org" target="_blank">Global Game Jam</a> game made in UDK where you race around a track and the path you took in the previous lap is shape of the track for the next.</p>
+
+                <p>Your score is determined by the amount of distance covered per lap (which must be completed in a restricted time). Therefore, you had to try and shape your track to minimize tight corners as they would slow you down. </p>
+
+                <p>This was my first time using the Unreal Development Kit, so I had to learn quickly to be of use to the team.</p>               
+              </div>
+              <div class="carouselImage">
+                <h1>Gloop</h1>
+                <h3>2012</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/Gloop.jpg" width=100%/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://archive.globalgamejam.org/2012/gloop" role="button">Download Game</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="kai">
+              <div class="carouselText">
+                <p>A <a class="darkLink" href="http://www.globalgamejam.org" target="_blank">Global Game Jam</a> game where you have to provide light to sustain a planet, but the more light you gave the planet, the more it needs. Eventually, your planet reaches a point where it becomes unsustainable with the amount of light in the universe.</p>
+
+                <p>The game was made in Unity (my first time using it and, to add to the challenge, we didn't even start using Unity until the second day!).</p>
+              </div>
+              <div class="carouselImage">
+                <h1>And then the lights went out...</h1>
+                <h3>2011</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/attlwo.png" width=100%/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://archive.globalgamejam.org/2011/and-then-lights-went-out" role="button">Download Game</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="container" id="kai">
+              <div class="carouselText">
+              <p>My first <a class="darkLink" href="http://www.globalgamejam.org" target="_blank">Global Game Jam</a> (in fact, the first Global Game Jam!). We created a co-op Flash game where you had to control two ends of a fishing net and capture the fish inside it.</p>
+              <p>I wrote the algorithms for moving the fish around in a believable way, using flocking techniques.</p>
+              </div>
+              <div class="carouselImage">
+                <h1>The Deep</h1>
+                <h3>2009</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/thedeep_screenshot.jpg" width=100%/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://archive.globalgamejam.org/games/deep-0" role="button">Download Game</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="kai">
+              <div class="carouselText">
+              <p>We created a couple of games in another game jam.</p>
+
+              <p>The first was a variant on the classic snake where the food was a magic mushroom and the more you ate, the more trippy the experience became.</p>
+
+              <p>The second was a game where you had to defend your castle from an advancing army of cows who stand on top of each other to climb over the wall. </p>
+              </div>
+              <div class="carouselImage">
+                <h1>Magic Mooshrooms</h1>
+                <div class="imageCentreContainer">
+                  <img src="images/mm.png" width=100%/>
+                  <p>
+                    <a class="btn btn-primary" target="_blank" href="http://www.glorioustrainwrecks.com/node/2351" role="button">Download Snake</a>
+                    <a class="btn btn-primary" target="_blank" href="http://www.glorioustrainwrecks.com/node/6776" role="button">Download CowShooter</a>
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="item">
+            <div class="container" id="kai">
+              <div class="carouselText">
+              <p>Jump is a game I made in Flash a long time ago to quickly try out an idea. You must jump from platform to platform. </p>              
+              </div>
+              <div class="carouselImage">
+                <h1>Jump</h1>
+                <h3>2009</h3>
+                <div class="imageCentreContainer">
+                  <img src="images/jump.png" width=100%/>
+                  <p><a class="btn btn-lg btn-primary" target="_blank" href="http://thk123.itch.io/jump" role="button" target="_blank">Play Online</a></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left btn-xlarge"><h4>Prev</h4></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"><h4>Next</h4></span></a>
+        <div id="indicators" style="position:relative;top:50px; ">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+        </ol> 
+      </div>
+      </div><!-- /.carousel -->
+    </div>
+  <div id="header">
+      <div id="brief">
+        <div id="innerbrief">
+          <p>I am a final year student studying Discrete Mathematics at the University of Warwick 
+          on track for a 1st. I am a excellent programmer familiar with C# and C++. I have 1.5 years industry experience 
+          and have shipped one game - <a href="http://strikesuitzero.com">Strike Suit Zero</a>.</p>
+        </div>
+      </div>
+      <div id="title">
+        <h1>Thomas Kiley</h1>
+        <h2><a href="mailto:hi@tkiley.co.uk">hi@tkiley.co.uk</a></h2>
+      </div>
+    </div>
+  </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+html
+{
+	height:100%;
+}
+
+body
+{
+	background-color: #206876;
+	height:100%;
+	color:#020610;
+}
+
+a{
+	color:#FF9500;
+}
+
+a:active
+{
+	color: #FF9500;
+}
+
+a:hover {
+	color: #FAA52D;
+}
+
+#fuckingcolumn
+{
+	width:75%;
+	height:100%;
+	margin:auto;
+	background-color: #020610;
+	min-width: 800px;
+}
+
+#pageBody h1
+{
+	color: #020610;
+	/*color: #000;*/
+}
+
+.btn {
+	background-color: #FF9500;
+	border-color:  #FF9500;
+}
+
+.btn:active
+{
+	background-color: #FF9500;
+	border-color:  #FF9500;	
+}
+
+.btn:hover {
+	background-color: #FAA52D;
+	border-color:  #FAA52D;
+}
+
+h3
+{
+	margin-top:-5px;
+	margin-bottom:-5px;
+	color: #020610; /*#123;*/
+}
+
+#main
+{
+	position:relative;
+	top:5%;
+	width:100%;
+	
+	height:78%;
+	background-color:#3D94BA;
+	margin:auto;
+}
+
+#header
+{
+	width:100%;
+	height:30%;	
+	min-height:130px;
+	background-color:#020610; /*#050505;*/
+	color:#CCC;
+}
+
+#brief
+{
+	height:100%;
+	width: 58%;
+	display: table;
+	float:left;
+	padding-left: 2%;
+}
+
+#innerbrief
+{
+	display: table-cell;
+	vertical-align:middle;
+}
+
+
+#title
+{
+ 	width:38%;
+ 	float:right;
+ 	text-align:right;
+ 	padding-right:2%;
+}
+
+#title a
+{
+	text-align:right;
+	float:right;
+}
+
+
+
+#navbar
+{
+	margin-bottom: 0;
+	background-color:#020610;
+	border-radius: 0;
+	border-color: #020610;
+	border-bottom-color: #9EB2B6;
+	min-width: 800px;
+}
+
+.carousel-indicators li {
+  border-color:#020610;
+
+}
+
+.carousel-indicators .active {
+  background-color: #04859D;
+  border-color:#020610;
+}
+
+.navbar-default ul
+{
+	background-color: #020610;
+}
+
+#navbar li
+{
+	background-color: #020610;
+}
+
+#navbar .active a
+{
+	background-color: #9EB2B6;
+	color:#020610;
+}
+
+#navbar a
+{
+	color: #fff;
+	font-size: 1.1em;
+
+}
+
+#pageBody
+{
+	height: 75%;
+	background-color:#9EB2B6;
+	min-height: 390px;
+}
+
+.carouselText a
+{
+	text-decoration: underline;
+	color:#020610;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+
+}
+
+.carouselText a:hover
+{
+	background-color:#FF9500;
+	text-decoration: underline;
+	color: #020610;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
